@@ -1,13 +1,13 @@
 # Diffusion-based Image Generation for In-distribution Data Augmentation in Surface Defect Detection #
 
-The official PyTorch implementation discussed in the *Diffusion-based Image Generation for In-distribution Data Augmentation in Surface Defect Detection* paper. Accepted at the 19th International Conference on Computer Vision Theory and Applications (VISAPP 2024).
+The official PyTorch implementation of the *Diffusion-based Image Generation for In-distribution Data Augmentation in Surface Defect Detection* paper. Accepted at the 19th International Conference on Computer Vision Theory and Applications (VISAPP 2024).
 
 ## Installation ##
 
 1. Repository setup
 * git clone `https://github.com/intelligolabs/in_and_out`
 
-2. Enviroment setup (the scripts are tested with Pytorch 2.0.1. 1.12.1 is not tested but should work):
+2. Environment setup (the scripts are tested with Pytorch 2.0.1. 1.12.1 is not tested but should work):
 * `conda create -n in_and_out python=3.10`
 * `conda activate in_and_out`
 * `pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu113`
@@ -40,7 +40,7 @@ Then:
                 |-- img00N.png
                 |-- img00N.txt
             ```
-    * Since we are using the Deambooth technique, we need to generate at least 200 regularization images. In order to do this:
+    * Since we use the Deambooth technique, we need to generate at least 200 regularization images. In order to do this:
         * Generate 200 new images through the script `3_launch_generate_imgs.sh`, using the token `type_of_item`
         * Generate the corresponding labels using the script `utils/generate_lbls.py` and the token `type_of_item`
     * Put in the same folder your own images (and labels) and the regularization images (and labels)
@@ -55,9 +55,9 @@ Click [here](sd_utilities/_README.md) for the technical documentation.
 
 ## Part 2: Tests on the KolektorSDD2 dataset ##
 
-For downloading the KolektorSDD2 dataset, launch the script `utils/ksdd2_dowloader.py`. The `main.py` file, on the other hand, shows the use of the dataset.
+To download the KolektorSDD2 dataset, launch the script `utils/ksdd2_dowloader.py`. The `main.py` file, on the other hand, shows how to use the dataset.
 
-We would like to thank ViCoS Lab for the repository [mixed-segdec-net-comind2021](https://github.com/vicoslab/mixed-segdec-net-comind2021), and Jin-Hwa Kim for the repository [orthoad](https://github.com/jnhwkim/orthoad), for providing some of the scripts used to manage the dataset, and all the code.
+We would like to thank ViCoS Lab for the repository [mixed-segdec-net-comind2021](https://github.com/vicoslab/mixed-segdec-net-comind2021) and Jin-Hwa Kim for the repository [orthoad](https://github.com/jnhwkim/orthoad), for providing some of the scripts used to manage the dataset, and all the code.
 
 ## Authors ##
 Luigi Capogrosso*, Federico Girella*, Francesco Taioli*, Michele Dalla Chiara, Muhammad Aqeel, Franco Fummi, Francesco Setti, and Marco Cristani
