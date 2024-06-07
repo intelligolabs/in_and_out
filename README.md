@@ -67,3 +67,14 @@ Luigi Capogrosso*, Federico Girella*, Francesco Taioli*, Michele Dalla Chiara, M
 `name.surname@univr.it`
 
 *These authors contributed equally to this work.
+
+## Citation ##
+If you use [**In&Out**](https://arxiv.org/abs/2406.00501), please, cite the following paper:
+```
+@article{capogrosso2024diffusion,
+  title={Diffusion-based Image Generation for In-distribution Data Augmentation in Surface Defect Detection},
+  author={Capogrosso, Luigi and Girella, Federico and Taioli, Francesco and Chiara, Michele Dalla and Aqeel, Muhammad and Fummi, Franco and Setti, Francesco and Cristani, Marco},
+  journal={arXiv preprint arXiv:2406.00501},
+  year={2024}
+}
+```
