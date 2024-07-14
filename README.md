@@ -1,26 +1,26 @@
 # Diffusion-based Image Generation for In-distribution Data Augmentation in Surface Defect Detection #
 
-The official PyTorch implementation of the *Diffusion-based Image Generation for In-distribution Data Augmentation in Surface Defect Detection* paper. Accepted at the 19th International Conference on Computer Vision Theory and Applications (VISAPP 2024).
+Official implementation of the paper [Diffusion-based Image Generation for In-distribution Data Augmentation in Surface Defect Detection](https://intelligolabs.github.io/in_and_out/) accepted at the 19th International Conference on Computer Vision Theory and Applications (VISAPP 2024).
 
 ## Installation ##
+**1. Repository setup:**
+* `$ git clone https://github.com/intelligolabs/in_and_out`
 
-1. Repository setup
-* git clone `https://github.com/intelligolabs/in_and_out`
+**2. Conda environment setup:**
+* `$ conda create -n in_and_out python=3.10`
+* `$ conda activate in_and_out`
+* `$ pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu113`
+* `$ cd sd_utilities/`
+* `$ pip install --upgrade -r requirements.txt`
+* `$ pip install xformers==0.0.20`
+* `$ pip install bitsandbytes==0.38.1`
+* `$ accelerate config`
 
-2. Environment setup (the scripts are tested with Pytorch 2.0.1. 1.12.1 is not tested but should work):
-* `conda create -n in_and_out python=3.10`
-* `conda activate in_and_out`
-* `pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu113`
-* `cd sd_utilities/`
-* `pip install --upgrade -r requirements.txt`
-* `pip install xformers==0.0.20`
-* `pip install bitsandbytes==0.38.1`
-* `accelerate config`
+The scripts are tested with Pytorch 2.0.1; 1.12.1 is not tested but should work.
 
 ## Part 1: Image generation with Stable Diffusion ##
-
 Firstly, enter inside the `sd_utilities/` folder with the command:
-* `cd sd_utilities/`
+* `$ cd sd_utilities/`
 
 This folder, specifically, is a copy of the repository [sd-scripts](https://github.com/kohya-ss/sd-scripts) of [kohya-ss](https://github.com/kohya-ss).
 
@@ -54,9 +54,10 @@ Then:
 Click [here](sd_utilities/_README.md) for the technical documentation.
 
 ## Part 2: Tests on the KolektorSDD2 dataset ##
+To download the KolektorSDD2 dataset, launch the script `utils/ksdd2_dowloader.py`.
+On the other hand, the `main.py` file shows how to use the dataset.
 
-To download the KolektorSDD2 dataset, launch the script `utils/ksdd2_dowloader.py`. The `main.py` file, on the other hand, shows how to use the dataset.
-
+## Credits ##
 We would like to thank ViCoS Lab for the repository [mixed-segdec-net-comind2021](https://github.com/vicoslab/mixed-segdec-net-comind2021) and Jin-Hwa Kim for the repository [orthoad](https://github.com/jnhwkim/orthoad), for providing some of the scripts used to manage the dataset, and all the code.
 
 ## Authors ##
