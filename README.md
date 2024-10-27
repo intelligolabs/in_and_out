@@ -70,12 +70,18 @@ Luigi Capogrosso*, Federico Girella*, Francesco Taioli*, Michele Dalla Chiara, M
 *These authors contributed equally to this work.
 
 ## Citation ##
-If you use [**In&Out**](https://arxiv.org/abs/2406.00501), please, cite the following paper:
+If you use [**In&Out**](https://www.scitepress.org/Link.aspx?doi=10.5220/0012350400003660), please, cite the following paper:
 ```
-@article{capogrosso2024diffusion,
-  title={Diffusion-based Image Generation for In-distribution Data Augmentation in Surface Defect Detection},
-  author={Capogrosso, Luigi and Girella, Federico and Taioli, Francesco and Chiara, Michele Dalla and Aqeel, Muhammad and Fummi, Franco and Setti, Francesco and Cristani, Marco},
-  journal={arXiv preprint arXiv:2406.00501},
-  year={2024}
+@conference{visapp24,
+  author={Luigi Capogrosso. and Federico Girella. and Francesco Taioli. and Michele Chiara. and Muhammad Aqeel. and Franco Fummi. and Francesco Setti. and Marco Cristani.},
+  title={Diffusion-Based Image Generation for In-Distribution Data Augmentation in Surface Defect Detection},
+  booktitle={Proceedings of the 19th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications - Volume 2: VISAPP},
+  year={2024},
+  pages={409-416},
+  publisher={SciTePress},
+  organization={INSTICC},
+  doi={10.5220/0012350400003660},
+  isbn={978-989-758-679-8},
+  issn={2184-4321},
 }
 ```
